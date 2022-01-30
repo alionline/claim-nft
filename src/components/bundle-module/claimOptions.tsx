@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./bundle.css"
 import UseModule from "./useModule";
+import { ethers } from "ethers";
 
 const ClaimOptions = (props: any) => {
 
@@ -34,6 +35,14 @@ const ClaimOptions = (props: any) => {
         console.log(allowListInputValue);
 
         const factory = await props.dropModule!.getClaimConditionsFactory();
+        // console.log(factory)
+        // console.log(Object.keys(factory))
+        // for(var x in factory){
+        //     console.log(factory[x])
+        // }
+
+        // second wallet 0x25FFd9f1450bc3A12b34A21989CDd26fb311C2d1
+        
 
         // Define claim phase.
         try {
@@ -43,6 +52,13 @@ const ClaimOptions = (props: any) => {
                 maxQuantity: maxQuantInputValue,
                 maxQuantityPerTransaction: mqptInputValue,
             });
+
+        //     console.log(claimPhase)
+        // console.log(Object.keys(claimPhase))
+        // for(var x in claimPhase){
+        //     console.log(claimPhase[x])
+        // }
+
 
             // Set price.
             claimPhase.setPrice(priceInputValue);

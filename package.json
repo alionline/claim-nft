@@ -42,10 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "browser": {
-    "fs": false
-  },
   "devDependencies": {
-    "@types/node": "^16.11.21"
+    "@types/node": "^16.11.21",
+    "buffer": "^6.0.3"
   }
 }

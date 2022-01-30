@@ -4,10 +4,13 @@ import Drop from "../bundle-module/drop"
 import UseModule from "../bundle-module/useModule";
 import Card from "../card/card";
 import "./homepage.css"
+import { Buffer } from "buffer"
+
 
 const Homepage = () => {
     
     const dropModule = UseModule();
+    window.Buffer = Buffer;
 
     return (
         <>

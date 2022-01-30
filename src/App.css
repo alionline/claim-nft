@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  /* height: 100%;
+  background-color: blue; */
+  height:100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+  padding: 20px 36px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.d-flex div{
+  /* border: 2px solid #fff; */
+  /* color: #fff; */
+  text-align: center;
+}
+
+.nav .nav-buttons ul {
+  display: flex;
+  margin-left: 200px;
+  background-color: red;
+}
+
+.nav-buttons li {
+display: inline;
+margin: 5px;
+}
